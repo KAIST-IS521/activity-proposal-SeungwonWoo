@@ -12,44 +12,38 @@
 \begin{document}
 %%% Header starts
 \noindent{\large\textbf{IS-521 Activity Proposal}\hfill
-                \textbf{Your Name}} \\
-         {\phantom{} \hfill \textbf{GitHub ID}} \\
+                \textbf{우승원}} \\
+         {\phantom{} \hfill \textbf{seungwonwoo}} \\
          {\phantom{} \hfill Due Date: April 15, 2017} \\
 %%% Header ends
 
 \section{Activity Overview}
 
-Briefly describe what this activity is about, and \emph{why} you are
-proposing this activity. (활동에 대한 간략한 설명과 왜 이 활동을
-제안하는지에 대한 이유를 서술.)
+Activity-proposal로 DNS-Spoofing에 대한 실습을 제안합니다. DNS Spoofing은 웹 주소를 입력해서 브라우저에 접속할 때 DNS Server에 해당 주소의 도메인에 대한 IP Address를 물어보는데, 공격자가 잘못된 IP를 DNS Server보다 먼저 알려주어서 잘못된 주소로 접속하게 하는 공격입니다. (기본적으로 이를 위한 환경이 제공되어야 할 것 같습니다.)
 
 \section{Exercises}
 
-Describe a series of exercises that students will carry out. (학생들이 하게
-될 연습문제를 순차적으로 서술.)
-
 \begin{exercise}
 
-  In this exercise, you do ...
+  첫 번째로 DNS Spoofing을 하기 전에 DNS Query를 받기 위해서는 ARP Spoofing이 선행되어야 합니다. 기본적으로 제공되는 Client를 대상으로 ARP Spoofing을 실행합니다.
 
 \end{exercise}
 
 \begin{exercise}
 
-  In this exercise, you do ...
+  두 번째로 ARP Spoofing을 성공적으로 했다면 Client가 웹 브라우저에 접속하는 시나리오를 생각해 DNS Spoofing을 실행합니다.
 
 \end{exercise}
 
 \begin{exercise}
 
-  In this exercise, you do ...
+  세 번째로 두 번째 진행했던 DNS Spoofing 과정에서의 잘못된 IP Address를 자신의 address로 지정해 간단한 웹서버를 구현해 Client가 해당 웹서버를 확인할 수 있도록 합니다.
 
 \end{exercise}
 
 \section{Expected Solutions}
 
-Put expected solutions here.
-(예상되는 답안에 대해서 서술.)
+  기본적인 spoofing 과정을 이해하고 그 속에서 어떤 packet들을 주고 받는지 이해할 수 있게 됩니다.
 
 \bibliography{references}
 \bibliographystyle{plainnat}
